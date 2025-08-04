@@ -7,6 +7,9 @@ Este proyecto permite gestionar registros DNS en Cloudflare de forma automática
 ```bash
 git clone https://github.com/tuusuario/cloudflare-dns-guardian.git
 cd cloudflare-dns-guardian
+sudo chmod +x install.sh
+sudo chmod +x bootstrap_dns.sh
+sudo chmod +x check_and_repair_dns.sh
 sudo ./install.sh             # instala scripts + systemd.timer
 sudo bootstrap_dns.sh         # (una vez) crea registros base
 sudo systemctl enable cloudflare-dns-guardian.timer
