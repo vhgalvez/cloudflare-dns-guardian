@@ -12,7 +12,11 @@ sudo chmod +x bootstrap_dns.sh
 sudo chmod +x check_and_repair_dns.sh
 sudo ./install.sh             # instala scripts + systemd.timer
 sudo bootstrap_dns.sh         # (una vez) crea registros base
-sudo systemctl enable cloudflare-dns-guardian.timer
-sudo systemctl start cloudflare-dns-guardian.timer
-sudo systemctl status cloudflare-dns-guardian.timer
+
+sudo systemctl enable dns-guardian.timer
+sudo systemctl start dns-guardian.timer
+sudo systemctl status dns-guardian.timer
+
+
+
 ```
